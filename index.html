@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>हिंदी Computer & E-Mitra Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        /* Header Style */
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+        }
+        header p {
+            font-size: 1.1rem;
+            color: #dcdcdc;
+        }
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #ff9800;
+            color: #fff;
+        }
+        /* Breaking News Ticker */
+        .ticker-container {
+            background-color: #ffeb3b;
+            color: #333;
+            padding: 10px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .ticker-title {
+            background-color: #f44336;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin-right: 15px;
+            font-size: 0.9rem;
+        }
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 15px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        /* Card Style */
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-header {
+            background-color: #2a5298;
+            color: white;
+            padding: 15px;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .card-body ul {
+            list-style-type: none;
+        }
+        .card-body ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .card-body ul li a {
+            text-decoration: none;
+            color: #2a5298;
+            font-weight: 500;
+        }
+        .card-body ul li a:hover {
+            color: #ff9800;
+            text-decoration: underline;
+        }
+        .badge {
+            background-color: #e91e63;
+            color: white;
+            font-size: 0.75rem;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-left: 5px;
+        }
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>हिंदी Computer & E-Mitra Hub</h1>
+        <p>कंप्यूटर ज्ञान, ई-मित्र सेवाएँ, और ताज़ा सरकारी वेकेंसियाँ</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#">होम (Home)</a>
+        <a href="#">कंप्यूटर ज्ञान (Computer)</a>
+        <a href="#">ई-मित्र अपडेट (E-Mitra)</a>
+        <a href="#">नवीन वेकेंसियाँ (Vacancies)</a>
+        <a href="#">डाउनलोड्स (Downloads)</a>
+        <a href="#">संपर्क करें (Contact)</a>
+    </nav>
+
+    <!-- Breaking News / Updates -->
+    <div class="ticker-container">
+        <span class="ticker-title">न्यूज़ अपडेट</span>
+        <marquee behavior="scroll" direction="left">
+            📌 नई सरकारी वेकेंसियों के आवेदन शुरू • ई-मित्र पोर्टल पर नई सेवाएं लाइव • कंप्यूटर टाइपिंग और शॉर्टकट कीज़ के नए नोट्स यहाँ उपलब्ध हैं!
+        </marquee>
+    </div>
+
+    <!-- Main Content Grid -->
+    <div class="container">
+        
+        <!-- Section 1: Computer Knowledge -->
+        <div class="card">
+            <div class="card-header">💻 कंप्यूटर नॉलेज & टिप्स</div>
+            <div class="card-body">
+                <ul>
+                    <li><a href="#">MS Word और Excel के महत्वपूर्ण शॉर्टकट कीज़</a></li>
+                    <li><a href="#">CorelDraw और हिंदी टाइपिंग (Kruti Dev) गाइड्स</a></li>
+                    <li><a href="#">कंप्यूटर हार्डवेयर और वाई-फाई डोंगल ट्रबलशूटिंग</a> <span class="badge">New</span></li>
+                    <li><a href="#">फोटोशॉप बेसिक टूल्स की जानकारी हिंदी में</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 2: E-Mitra Services & News -->
+        <div class="card">
+            <div class="card-header">🛠️ ई-मित्र न्यूज़ & पोर्टल वर्क</div>
+            <div class="card-body">
+                <ul>
+                    <li><a href="#">Rajasthan SSO Portal नई सर्विस अपडेट</a></li>
+                    <li><a href="#">मूलनिवास, जाति और आय प्रमाण पत्र ऑनलाइन प्रक्रिया</a></li>
+                    <li><a href="#">प्रधानमंत्री फसल बीमा योजना (PMFBY) क्लेम फॉर्म</a></li>
+                    <li><a href="#">मुख्यमंत्री स्वरोजगार योजना प्रोजेक्ट रिपोर्ट गाइड</a> <span class="badge">Hot</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 3: Latest Vacancies -->
+        <div class="card">
+            <div class="card-header">📢 लेटेस्ट वेकेंसियाँ & रिजल्ट</div>
+            <div class="card-body">
+                <ul>
+                    <li><a href="#">RSMSSB Tax Assistant भर्ती नोटिफिकेशन</a> <span class="badge">New</span></li>
+                    <li><a href="#">CET परीक्षा सिलेबस और योग्यता की पूरी जानकारी</a></li>
+                    <li><a href="#">ग्राम पंचायत और प्रशासनिक नौकरियों के अपडेट</a></li>
+                    <li><a href="#">राजस्थान सरकारी रिजल्ट और एडमिट कार्ड लिंक</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 हिंदी Computer & E-Mitra Hub | सभी अधिकार सुरक्षित हैं।</p>
+        <p>डिजाइन किया गया आपके डिजिटल सर्विस सेंटर और कंप्यूटर नॉलेज के लिए।</p>
+    </footer>
+
+</body>
+</html>
