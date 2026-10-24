@@ -214,3 +214,269 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>हिंदी Computer & E-Mitra Hub | टिनवाड़ी, जोधपुर</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        /* Header Style */
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 25px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            font-size: 2.3rem;
+            margin-bottom: 5px;
+        }
+        header p {
+            font-size: 1.1rem;
+            color: #dcdcdc;
+        }
+        /* Navigation Bar */
+        nav {
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #ff9800;
+            color: #fff;
+        }
+        /* Breaking News Ticker */
+        .ticker-container {
+            background-color: #ffeb3b;
+            color: #333;
+            padding: 10px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .ticker-title {
+            background-color: #f44336;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 4px;
+            margin-right: 15px;
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 15px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+        }
+        /* Card Style */
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-header {
+            background-color: #2a5298;
+            color: white;
+            padding: 15px;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .card-body ul {
+            list-style-type: none;
+        }
+        .card-body ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .card-body ul li a {
+            text-decoration: none;
+            color: #1e3c72;
+            font-weight: 500;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .card-body ul li a:hover {
+            color: #ff9800;
+            text-decoration: underline;
+        }
+        .badge {
+            background-color: #e91e63;
+            color: white;
+            font-size: 0.75rem;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+        .badge-green {
+            background-color: #4caf50;
+            color: white;
+            font-size: 0.75rem;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+        /* Quick Links Section */
+        .quick-links {
+            background: white;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .quick-links h3 {
+            margin-bottom: 15px;
+            color: #1e3c72;
+        }
+        .btn-portal {
+            display: inline-block;
+            background-color: #2a5298;
+            color: white;
+            padding: 10px 18px;
+            margin: 5px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        .btn-portal:hover {
+            background-color: #ff9800;
+        }
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+        footer p {
+            margin-bottom: 5px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>हिंदी Computer & E-Mitra Hub</h1>
+        <p>कंप्यूटर ज्ञान, ई-मित्र सेवाएँ, और राजस्थान की ताज़ा सरकारी वेकेंसियाँ</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="index.html">होम (Home)</a>
+        <a href="#computer">कंप्यूटर ज्ञान</a>
+        <a href="#emitra">ई-मित्र सेवाएँ</a>
+        <a href="#vacancy">नवीन वेकेंसियाँ</a>
+        <a href="https://sso.rajasthan.gov.in" target="_blank">SSO पोर्टल</a>
+    </nav>
+
+    <!-- Breaking News / Updates -->
+    <div class="ticker-container">
+        <span class="ticker-title">महत्वपूर्ण अपडेट</span>
+        <marquee behavior="scroll" direction="left">
+            📌 राजस्थान की नई प्रतियोगी परीक्षाओं के ऑनलाइन आवेदन शुरू • SSO पोर्टल पर जनाधार अपडेशन सेवा सुचारू रूप से चालू है • कंप्यूटर टाइपिंग और शॉर्टकट नोट्स के नए वीडियो हमारे चैनल पर देखें!
+        </marquee>
+    </div>
+
+    <!-- Quick Direct Portals -->
+    <div class="quick-links">
+        <h3>🔗 महत्वपूर्ण आधिकारिक पोर्टल (Direct Links)</h3>
+        <a href="https://sso.rajasthan.gov.in" target="_blank" class="btn-portal">Rajasthan SSO Login</a>
+        <a href="https://rpsc.rajasthan.gov.in" target="_blank" class="btn-portal">RPSC Official Site</a>
+        <a href="https://rssb.rajasthan.gov.in" target="_blank" class="btn-portal">RSSB (RSMSSB) Board</a>
+        <a href="https://janaadhaar.rajasthan.gov.in" target="_blank" class="btn-portal">Jan Aadhaar Portal</a>
+    </div>
+
+    <!-- Main Content Grid -->
+    <div class="container" id="computer">
+        
+        <!-- Section 1: Computer Knowledge -->
+        <div class="card">
+            <div class="card-header">💻 कंप्यूटर नॉलेज & टाइपिंग टिप्स</div>
+            <div class="card-body">
+                <ul>
+                    <li><a href="#">MS Word और Excel के टॉप 50 शॉर्टकट कीज़ <span class="badge-green">PDF</span></a></li>
+                    <li><a href="#">हिंदी टाइपिंग (Kruti Dev 010) फॉन्ट कोड्स और लेआउट</a></li>
+                    <li><a href="#">Tally Prime में लेजर और बैंक स्टेटमेंट एंट्री गाइड</a></li>
+                    <li><a href="#">कम्प्यूटर हार्डवेयर, प्रिंटर और वाई-फाई ट्रबलशूटिंग <span class="badge">New</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 2: E-Mitra Services & News -->
+        <div class="card" id="emitra">
+            <div class="card-header">🛠️ ई-मित्र सेवाएँ & अपडेट</div>
+            <div class="card-body">
+                <ul>
+                    <li><a href="https://sso.rajasthan.gov.in" target="_blank">मूलनिवास, जाति और आय प्रमाण पत्र ऑनलाइन प्रक्रिया</a></li>
+                    <li><a href="https://janaadhaar.rajasthan.gov.in" target="_blank">जनाधार कार्ड में नाम, उम्र और सदस्य जोड़ना</a></li>
+                    <li><a href="#">मुख्यमंत्री स्वरोजगार योजना प्रोजेक्ट रिपोर्ट गाइड</a> <span class="badge">Hot</span></li>
+                    <li><a href="#">फसल बीमा, पेंशन सत्यापन और बिजली बिल भुगतान सेवाएं</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 3: Latest Vacancies -->
+        <div class="card" id="vacancy">
+            <div class="card-header">📢 लेटेस्ट सरकारी वेकेंसियाँ</div>
+            <div class="card-body">
+                <ul>
+                    <li><a href="https://rpsc.rajasthan.gov.in" target="_blank">RPSC RAS एवं प्रशासनिक सेवा परीक्षा अपडेट <span class="badge">New</span></a></li>
+                    <li><a href="https://rssb.rajasthan.gov.in" target="_blank">CET (Graduation & Senior Secondary) परीक्षा तिथियां</a></li>
+                    <li><a href="#">राजस्थान ग्राम पंचायत और कंप्यूटर ऑपरेटर भर्ती सूचना</a></li>
+                    <li><a href="https://sso.rajasthan.gov.in" target="_blank">भर्ती परीक्षाओं के लिए OTR (One Time Registration) प्रक्रिया</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 हिंदी Computer & E-Mitra Hub | टिनवाड़ी, जोधपुर, राजस्थान</p>
+        <p>कंप्यूटर शिक्षा, डिजिटल सेवा और सूचनाओं का विश्वसनीय केंद्र।</p>
+    </footer>
+
+</body>
+</html>
